@@ -1,0 +1,21 @@
+# SW Requirements
+VSCode
+Docker Desktop
+git
+
+
+# Verifications
+docker --version
+docker-compose --version
+git --version
+
+
+
+
+docker-compose run --rm app sh -c "python manage.py collectstatic"
+docker-compose run -rm app sh -c "django-admin startproject app ."
+
+docker-compose up
+
+# Run any command on the Docker container
+docker-compose run --rm app sh -c "pip freeze"

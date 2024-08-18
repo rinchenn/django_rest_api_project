@@ -1,0 +1,5 @@
+Why use Docker?
+- Consistent dev and prod environment
+- Capture all dependencies as code
+
+
